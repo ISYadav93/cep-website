@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Aid Network</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f9fafc;
+        }
+
+        .hero-section {
+            background: url('image/img1.jpeg') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 15, 15, 0.5);
+            /* Dark overlay */
+            z-index: 1;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }                      
+
+        .hero-content h1 {
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn-custom:hover {
+            background-color: #218838;
+            color: white;
+        }
+
+        /* Navbar Customization */
+        .navbar {
+            background-color: rgb(254, 253, 253);
+        }
+        
+        .service-card {
+            box-shadow: 0 4px 6px rgba(16, 16, 16, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            background: #f8faf9;
+            height: 100%;
+            transition: transform 0.1s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.1s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .service-card:hover {
+            /* transform: translateY(-8px); */
+            transform: scale(1.05); /* Increase the size */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+        }
+
+
+        .section-padding {
+            padding: 5rem 0;
+        }
+
+        .ep {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+
+        .text-highlight {
+            color: #28a745;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .content-heading {
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-paragraph {
+            color: #111111;
+            line-height: 1.8;
+        }
+
+        .link-custom {
+            color: #000;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .bg-light-green {
+            background-color: #dbf1e1;
+        }
+
+        .footer {
+            background: #080808;
+            color: #fff;
+            padding: 40px 20px;
+        }
+
+        .footer a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#services"><img src="image/logo.jpg" alt="Your Logo" style="width: 40px;height: auto;">DISASTER AID NETWORK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Disasters.html">Types of Disaster</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-success" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Be prepared, stay safe</h1>
+            <p>Join the fight against disasters</p>
+            <a href="#services" class="btn btn-custom btn-lg">VIEW SERVICES</a>
+        </div>
+    </section>
+
+
+    <!-- Section 1: Empowering Preparedness -->
+    <section class="section-padding" id="About">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <p class="text-highlight">Your safety, our mission</p>
+                    <h2 class="content-heading">Empowering communities through preparedness</h2>
+                    <p class="content-paragraph">
+                        Disaster Aid Network is dedicated to providing top-notch disaster management services in New
+                        Delhi,
+                        India. We specialize in emergency response, comprehensive training, and effective recovery
+                        strategies to protect and empower communities during crises.
+                    </p>
+                    <p class="content-paragraph">
+                        Our team is committed to ensuring safety and preparedness through actionable guidelines and
+                        resources. Trust us to be your partner in navigating the challenges of disasters, and together,
+                        we can build a resilient future.
+                    </p>
+                    <h2 class="content-heading">Who We Are</h2>
+                    <p class="content-paragraph">
+                        We are a dedicated team of disaster management professionals, researchers, and volunteers who
+                        are passionate about creating a safer and more resilient future. With years of experience in
+                        disaster risk reduction, response, recovery, and mitigation, we strive to empower individuals
+                        and communities to navigate challenges posed by natural and human-made hazards.
+                    </p>
+                    
+                </div>
+                <!-- Image -->
+                <div class="col-md-6">
+                    <img src="image/img2.jpeg" alt="Preparedness Image" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="content-heading">Our Vision</h2>
+            <p class="content-paragraph">
+                A world where communities are empowered, informed, and resilient in the face of disasters, fostering
+                sustainable growth and well-being for all.
+            </p>
+            <h2 class="content-heading">Our Mission</h2>
+            <p class="content-paragraph">
+            <ul>
+                <li>To educate and equip individuals, organizations, and governments with tools and knowledge for
+                    effective
+                    disaster management.</li>
+
+                <li>To deliver rapid and effective responses to emergencies.</li>
+                <li>To advocate for sustainable policies that mitigate the impact of disasters.</li>
+                <li> To foster innovation in disaster preparedness and resilience.</li>
+            </ul>
+            </p>
+            <a href="/index.html#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-light-green section-padding services-section" id="services">
+        <div class="container text-center">
+            <p class="text-highlight">Comprehensive support</p>
+            <h2 class="content-heading">Your partner in disaster preparedness</h2>
+            <div class="row g-4 ep">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="image/img3.jpeg" alt="Emergency Response" class="img-fluid mb-3 rounded">
+                        <h5><b>Emergency response</b></h5>
+                        <p>When disaster strikes, every second counts. Our Emergency Response team is dedicated to providing swift and effective assistance in critical situations.Trust us to be your first line of defense when every moment matters.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="image/img4.jpeg" alt="Disaster Recovery" class="img-fluid mb-3 rounded">
+                        <h5><b>Disaster recovery</b></h5>
+                        <p>Recovery from a disaster is a complex process that requires careful planning and execution. Our Disaster Recovery services focus on helping communities restore their lives and infrastructure after a calamity. </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="image/img5.jpeg" alt="Training Programs" class="img-fluid mb-3 rounded">
+                        <h5><b>Training programs</b></h5>
+                        <p>Education and preparedness are key to effective disaster management. Our Training Programs are designed to equip individuals and organizations with the knowledge and skills necessary to respond to disasters confidently.</p>
+                    </div>
+                </div>
+            </div><br><br>
+            <h5><strong>For More Services Click on the button below:</strong></h5>
+            <a href="moreservices.html" class="btn btn-custom btn-lg">MORE SERVICES</a>
+        </div>
+    </section>
+
+    <!-- Section: Contact Form -->
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <!-- Form -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <p class="form-heading">Get in Touch</p>
+                    <h2 class="form-title">We're here to assist you 24/7</h2>
+                    <form id="POPUP">
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                        </div>
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address <span
+                                    class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="username@email.com"
+                                required>
+                        </div>
+                        <!-- Phone -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone number <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="phone" placeholder="555-555-5555" required>
+                        </div>
+                        <!-- Message -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <!-- Checkbox -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="consent" required>
+                            <label class="form-check-label" for="consent">
+                                I allow this website to store my submission so they can respond to my inquiry. <span
+                                    class="text-danger">*</span>
+                            </label>
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-custom w-100" onclick="submit_msg()">SUBMIT</button>
+                    </form>
+                </div>
+                <!-- Contact Box -->
+                <div class="col-md-5 offset-md-1">
+                    <div class="contact-box shadow-sm">
+                        <h6><b>Get in touch</b></h6>
+                        <p>📧 <a href="mailto:disasteraidnetwork@help.ac"
+                                class="text-decoration-none text-dark">disasteraidnetwork@help.ac</a></p>
+                        <h6 class="mt-3"><b>Location</b></h6>
+                        <p> NDMA Bhawan
+                            A-1, Safdarjung Enclave,<br>
+                            New Delhi - 110029 <br><a
+                                href="http://maps.google.co.in/maps?q=NDMA+Bhawan,A-1,+Safdarjung+Enclave,New+Delhi&amp;oe=utf-8&amp;client=firefox-a&amp;ie=UTF8&amp;hq=NDMA+Bhawan,A-1,&amp;hnear=Safdarjung+Enclave,+New+Delhi,+South+West+Delhi,+Delhi&amp;t=m&amp;ll=28.566526,77.199286&amp;spn=0.006295,0.007312&amp;source=embed">View
+                                on Map</a></p>
+        
+                                <h6><b>Contact</b></h6>
+                            <b>Emergency No.:</b> 1009
+                            <br>+91-11-26701700
+                            <br><b>Control Room:</b> +91-11-26701728
+                            <br><b>Fax:</b> +91-11-26701729
+                        </h6>
+
+                        <h6 class="mt-3"><b>Hours</b></h6>
+                        <p>
+                            Mon-Fri -> 9:30AM-6:00PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row">
+                
+                <!-- <div class="col-md-4">
+                    <a href="#">Complete Intake</a>
+                </div> -->
+                <div class="col-md-4">
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      
+        function submit_msg()
+        {
+            alert("Your review has been submitted successfully.")
+        }
+      
+    </script>
+
+   
+</body>
+
+</html>
